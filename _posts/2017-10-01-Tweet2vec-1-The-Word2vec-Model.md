@@ -1,5 +1,5 @@
 ---
-title: "Tweet2vec 1: The word2Vec model"
+title: "Tweet2vec 1: The Word2Vec model"
 layout: post
 ---
 
