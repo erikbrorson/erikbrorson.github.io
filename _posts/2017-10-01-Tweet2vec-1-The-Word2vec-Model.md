@@ -5,15 +5,15 @@ layout: post
 
 ## Motivation
 
-In the earlier post I discussed we looked at a very naive way of representing tweets as vectors that contains the information of which words that is in the vector is contained in the specific tweets. We are now going to try a slightly more sophisticated way using word embeddings where each word is in an n-dimensional space in such a way that the distance between two words that are semantically similar is shorter than two words that are semantically less similar.
+In the earlier post we quantified the tweets as bag of word-vectors. We are now going to look at a more sophisticated way of vectorising tweets based on word2vec vectors. These vectors are described in a [paper](https://arxiv.org/abs/1301.3781) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. Each word is represented by an n-dimensional vector in such a way that the distance between two words that are semantically similar is shorter that two words that are semantically less similar. For example, if we had two word pairs (King, Man) and (King, Woman) we want the distance between the words in the first pair to be smaller than the distance between the words in the second pair.
 
-These word embeddings are learned using a neural network that predicts the probability of of one word being close to another word in a text. We will cover these models and how to implement them in Tensorflow in a future blog post.
+These word embeddings are learned using a neural network that predicts the probability of one word being close to another word in a text. We will cover these models and how to implement them in Tensorflow in a future blog post.
 
 The rest of this post is structured as follows. We start off by looking at the word embeddings we will use in the later tweet2vec processing and through a couple of examples get an intuition of how they work. 
 
 ## The pretrained Google word2vec embeddings
 
-In order to learn word2vec embeddings one needs a huge amount of data and computational resources. Lucky for us, there are easier ways to get the embeddings without paying hundreds of dollars in EC2 costs. We are going to use a pretrained model released by Google that can be [downloaded here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit). How to use this model is adequately described in [this blogpost](http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/).
+In order to learn word2vec embeddings you need to have a very big corpus of texts and substantial computational resources. Lucky for us, there are easier ways to get the embeddings without paying hundreds of dollars in EC2 costs. We are going to use a pretrained model released by Google that can be [downloaded here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit). How to use this model is adequately described in [this blogpost](http://mccormickml.com/2016/04/12/googles-pretrained-word2vec-model-in-python/).
 
 To get to the word embedding vectors we need to put the whole model in memory. We are going to use the gensim package. The code belows imports the model into memory.
 
