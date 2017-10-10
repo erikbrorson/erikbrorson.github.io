@@ -3,6 +3,8 @@ title: "Tweet2vec 1: The Word2Vec model"
 layout: post
 ---
 
+*In this post we continue to discuss the vectorisation of tweets. The technique that I discuss in this post will be used in an upcoming post where we will try it out on the data from the Kaggle competitions used in the earlier post.*
+
 ## Motivation
 
 In the earlier post we quantified the tweets as bag of word-vectors. We are now going to look at a more sophisticated way of vectorising tweets based on word2vec vectors. These vectors are described in a [paper](https://arxiv.org/abs/1301.3781) by Tomas Mikolov, Kai Chen, Greg Corrado, and Jeffrey Dean. Each word is represented by an n-dimensional vector in such a way that the distance between two words that are semantically similar is shorter that two words that are semantically less similar. For example, if we had two word pairs (King, Man) and (King, Woman) we want the distance between the words in the first pair to be smaller than the distance between the words in the second pair.
