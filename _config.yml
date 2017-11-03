@@ -2,13 +2,13 @@
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
+#relative_permalinks: true
 
 # Setup
 title:               Erik Brorson
 tagline:             ''
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://lanyon.getpoole.com
-baseurl:             ''
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "page:num"
@@ -16,7 +16,7 @@ paginate_path: "page:num"
 # About/contact
 author:
   name:              Erik Brorson
-  url:               hhttps://www.linkedin.com/in/erik-brorson-26043359/
+  url:               https://www.linkedin.com/in/erik-brorson-26043359/
   email:             er.brorson@gmail.com
 
 # Custom vars
