@@ -124,11 +124,6 @@ class Adam_lr_mult(Optimizer):
 
 ```
 
-    /home/er.brorson/anaconda2/envs/py364/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
-      from ._conv import register_converters as _register_converters
-    Using TensorFlow backend.
-
-
 In addition to the normal parameters, the optimizer takes the *multiplier* argument which is a dictionary. It works like follows: Imagine if we have a network with three layers with names *layer_1*, *layer_2*, and *layer_3*. This would then be:
 
 
