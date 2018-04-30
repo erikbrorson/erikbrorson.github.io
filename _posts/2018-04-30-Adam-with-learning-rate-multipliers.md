@@ -1,11 +1,7 @@
-
 ---
-title: "Adam with learning rate multipliers"
+title: "Adam optimizer with learning rate multipliers"
 layout: post
 ---
-
-
-# Adam optimizer with learning rate multipliers
 
 Below is my implementation of the adam optimizer with learning rate multipliers, implemented and tried together with TensorFlow backend.
 
